@@ -17,16 +17,21 @@ public class Main {
 
         int number = keyboard.nextInt();
         int index = 0;
-        System.out.println(1.0);
         while (true) {
             Math.pow(2, index);
-            index++;
-
             if(Math.pow(2,index) <= number){
                 System.out.println(Math.pow(2,index));
+                index++;
+
 
 
             }
+            if(number <= 0 ){
+                System.out.println("Błąd!");
+                break;
+
+        }
+
         }
     }
 }
