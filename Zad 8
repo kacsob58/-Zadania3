@@ -1,0 +1,39 @@
+package pl.tt;
+import javafx.scene.effect.Blend;
+import org.w3c.dom.ls.LSOutput;
+
+import javax.swing.*;
+import java.lang.module.FindException;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Podaj wyskokość choinki:");
+
+        int height = keyboard.nextInt();
+        int a = 1;
+
+        while (height > 0) {
+            for (int i = height; i > 0; i--) {
+                System.out.print(" ");
+            }
+            for (int i = a; i > 0; i--) {
+                System.out.print("*");
+            }
+            System.out.println();
+            a = a + 2;
+            height--;
+        }
+    }
+}
+
+
+
+
+
